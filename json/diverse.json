@@ -1,0 +1,31 @@
+{
+	"Øl": {
+		"152" : { "name": "Blanc (Lille - 0,25 ltr.)", "price":39},
+		"153" : { "name": "Fadøl (Mellem - 0,5 ltr.)", "price":55},
+		"175" : { "name": "Fadøl (Stor - 0,75 ltr.)", "price":68},
+			"170" : { "name": "Fadøl Classic (Lille - 0,25 ltr.)", "price":,35},
+		"171" : { "name": "Fadøl Classic  (Mellem - 0,5 ltr.)", "price":50},
+		"172" : { "name": "Fadøl Classic  (Stor - 0,75 ltr.)", "price":65},
+		"173" : { "name": "Tuborg flaske øl", "price":38},
+		"174" : { "name": "Carlsberg flaske øl", "price":38},	
+		"154" : { "name": "Luksus øl", "price":42},
+		"155" : { "name": "Kinesisk øl - Tsingtao", "price":42}		
+	}
+	,
+	"Sodavand: Vælg mellem Coca Cola, Coca Cola Light, Coca Cola Zero, Fanta, Sprite, Lemon, Danskvand.": {
+		"156" : { "name": "Sodavand (Lille - 0,25 ltr.)", "price":33},
+		"157" : { "name": "Sodavand (Mellem - 0,5 ltr.)", "price":48},
+		"180" : { "name": "Sodavand (Stor - 0,75 ltr.)", "price":60},
+		"158" : { "name": "Æble / Appelsinjuice (Lille - 0,25 ltr.)", "price":30},
+		"159" : { "name": "Æble / Appelsinjuice (Mellem - 0,5 ltr.)", "price":45},
+		"169" : { "name": "Æble / Appelsinjuice (Stor - 0,75 ltr.)", "price":60},
+		"160" : { "name": "Kaffe (Pr. pers.)", "price":25},
+		"161" : { "name": "Kinesisk the (Pr. pers.)", "price":32},
+		"162" : { "name": "Irish Coffee", "price":48},
+		"165" : { "name": "Kildevand (Lille)", "price":25},
+		"166" : { "name": "Isvand", "price":20},
+		"167" : { "name": "1 glas mælk (Lille)", "price":15},
+		"168" : { "name": "1 glas mælk (Mellem)", "price":28},
+		"169" : { "name": "1 glas mælk (Stor)", "price":38}
+	}	
+}

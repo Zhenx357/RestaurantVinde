@@ -1,0 +1,278 @@
+﻿{
+	"Menuer":{
+		"801": {
+			"name":"Menu 1",
+			"description":"1 laks, 1 tun, 1 reje, 1 tofu, 4 california inside out, 2 agurk, 2 laks",
+			"price":108
+		},
+		"802": {
+			"name":"Menu 2",
+			"description":"2 laks, 2 tun, 2 rejer, 2 kingfish, 4 california inside out, 4 agurk, 4 laks",
+			"price":198
+		},
+		"803": {
+			"name":"Menu 3",
+			"description":"3 laks, 3 tun, 3 rejer, 3 kingfish, 3 tofu, 2 california insideout, 2 spicy tun, 4 agurk, 4 laks, 8 rejer inside out",
+			"price":278
+		},
+		"804": {
+			"name":"Menu 4",
+			"description":"4 laks, 4 tun, 4 rejer, 4 kingfish, 4 tofu, 2 california, 2 spicy tun, 4 agurk, 4 laks, 8 rejer inside out, 8 laks inside out",
+			"price":328
+		}
+	},
+	"Sm\u00E5 maki bokse":{
+		"805":{
+			"name":"Lille maki box",
+			"description":"16 sm\u00E5 maki: V\u00E6lg 2x8 ens skiver af tun, laks, avocado eller agurk",
+			"price":68
+		},
+		"806":{
+			"name":"Maki box",
+			"description":"10 store skiverV\u00E6lg 2x5 ens skiver",
+			"price":100
+		},
+		"807":{
+			"name":"KID box",
+			"description":"2 nigiri, 1 reje, 1 laks,8 sm\u00E5 maki: 4 sm\u00E5 avocado, 4 sm\u00E5 agurk maki",
+			"price":75
+		},
+		"808":{
+			"name":"Nigiri box",
+			"description":"2 nigiri reje, laks, hvidfisk, tun og tofu",
+			"price":138
+		}
+	},
+	"Special menu":{
+		"809":{
+			"name":"Osaki classic indside out",
+			"description":"4 speciale inside out: EBI Tempure, Avocado mogo, Grillet \u00E5l, Sumo roll",
+			"price":338
+		},
+		"810":{
+			"name":"Osaki mini super",
+			"description":"2 laks, 2 tun, 2 rejer, 2 kingfish, 2 tofu. 2 specials inside out:Tun deluxe, Crispy wabasi",
+			"price":288
+		},
+		"811":{
+			"name":"Osaki",
+			"description":"4 laks, 4 tun, 4 rejer, 4 kingfish, 4 tofu. 4 specials inside out: Avocado ruch, EBI tempura, Sumo roll, Rainbow",
+			"price":508
+		}
+	},
+	"Store ruller":{
+		"812":{
+			"name":"Tempura",
+			"description":"5 stk. EBI tempura, mesago, spicy sauce, sesam, for\u00E5rsl\u00F8g, avocado",
+			"price":78
+		},
+		"813":{
+			"name":"Spicy tun",
+			"description":"5 stk. Tun, avocado, agurk, spicy dip",
+			"price":73
+		},
+		"814":{
+			"name":"California roll",
+			"description":"5 stk. Crapstick, mayonnaise, avocado, agurk",
+			"price":65
+		},
+		"815":{
+			"name":"California laks",
+			"description":"5 stk. Laks, crapstick, mayonnaise, avocado, agurk",
+			"price":65
+		},
+		"816":{
+			"name":"Spicy laks",
+			"description":"5 stk. Laks, avocado, agurk, spicy dip",
+			"price":68
+		},		
+		"817":{
+			"name":"Vegetar roll",
+			"description":"5 stk. Avocado, agurk, rucola, tofu, gulerod",
+			"price":68
+		},	
+		"818":{
+			"name":"Spicy tigerreje",
+			"description":"5 stk. Tigerrejer, avocado, agurk, spicy dip",
+			"price":73
+		},	
+		"819":{
+			"name":"Tun m/ masago",
+			"description":"5 stk. Tun, flyvefiskerogn (masago), agurk",
+			"price":73
+		}
+	},
+	"Sm\u00E5 ruller":{
+		"820": {
+			"name":"Laks m. hvidl\u00F8g",
+			"description":"8 stk. laks, hvidl\u00F8g",
+			"price":50
+		},
+		"821": {
+			"name":"Agurk",
+			"description":"8 stk. agurk",
+			"price":50
+		},
+		"822": {
+			"name":"Avocado",
+			"description":"8 stk. avocado",
+			"price":50
+		},
+		"823": {
+			"name":"Laks",
+			"description":"8 stk. laks",
+			"price":52
+		},
+		"824": {
+			"name":"Laks m. ingef\u00E6r",
+			"description":"8 stk. laks, ingef\u00E6r",
+			"price":53
+		},
+		"825": {
+			"name":"Tun m. chili",
+			"description":"8 stk. tun, chili",
+			"price":53
+		},
+		"826": {
+			"name":"Tun",
+			"description":"8 stk. tun",
+			"price":53
+		},
+		"827": {
+			"name":"Tigerrejer",
+			"description":"8 stk. tigerrejer",
+			"price":53
+		}
+	},
+	"Inside out":{
+		"828": {
+			"name":"Tigerrejer inside out",
+			"description":"8 stk. tigerrejer, avocado, agurk",
+			"price":93
+		},
+		"829": {
+			"name":"Tun inside out",
+			"description":"8 stk. tun, avocado",
+			"price":95
+		},
+		"830": {
+			"name":"Laks inside out",
+			"description":"8 stk. laks, avocado, agurk",
+			"price":95
+		},
+		"831": {
+			"name":"California inside out",
+			"description":"8 stk. krabbek\u00F8d, avocado, agurk",
+			"price":90
+		}
+	},
+	"Nigiri":{
+		"832": {
+			"name":"Kingfish",
+			"description":"1 stk.",
+			"price":20
+		},
+		"833": {
+			"name":"Laks",
+			"description":"1 stk.",
+			"price":20
+		},
+		"834": {
+			"name":"Laks, ingef\u00E6r",
+			"description":"1 stk.",
+			"price":22
+		},
+		"835": {
+			"name":"Laks, hvidl\u00F8g",
+			"description":"1 stk.",
+			"price":22
+		},
+		"836": {
+			"name":"Grillet \u00E5l",
+			"description":"1 stk.",
+			"price":28
+		},
+		"837": {
+			"name":"Tun",
+			"description":"1 stk.",
+			"price":25
+		},
+		"838": {
+			"name":"Reje",
+			"description":"1 stk.",
+			"price":22
+		},
+		"839": {
+			"name":"Tofu",
+			"description":"1 stk.",
+			"price":18
+		}
+	},
+	"Special inside out":{
+		"840": {
+			"name":"Crispy wasabi",
+			"description":"8 stk. Sur/s\u00F8d marineret tigerrejer med avocado og agurk, rullet i knuse wasabi\u00E6rter",
+			"price":103
+		},
+		"841": {
+			"name":"Grillet \u00E5l",
+			"description":"8 stk. lun teriyaki, grillet \u00E5l med agurk og avocado",
+			"price":128
+		},
+		"842": {
+			"name":"Ebi tempura",
+			"description":"8 stk. tempura stegte tigerrejer med for\u00E5rsl\u00F8g, avocado og agurk, rullet i masago",
+			"price":118
+		},
+		"843": {
+			"name":"Mixed tun",
+			"description":"8 stk. tun, spacy sauce, masago og agurk rullet i for\u00E5rsl\u00F8g",
+			"price":113
+		},
+		"844": {
+			"name":"Tun de luxe",
+			"description":"8 stk. dybstegt paneret k\u00E6mpereje og spycy sauce, d\u00E6kket med tun",
+			"price":138
+		},
+		"845": {
+			"name":"Sumo roll",
+			"description":"8 stk. syltede r\u00F8dl\u00F8g, avocado og agurk, d\u00E6kket med kingfish og lakserogn",
+			"price":138
+		},
+		"846": {
+			"name":"Rainbow",
+			"description":"8 stk. california og agurk, d\u00E6kket med tun, laks, rejer, kingfish og avocado",
+			"price":128
+		},
+		"847": {
+			"name":"Rejer de luxe",
+			"description":"8 stk. tigerrejer med avocado og agurk, rullet i tobiko wasabi",
+			"price":113
+		},
+		"848": {
+			"name":"Avocado ruck",
+			"description":"8 stk. avocado, agurk, rucola og japansk mayonnaise belagt med avocado og chili sesam",
+			"price":118
+		},
+		"849": {
+			"name":"Tetami",
+			"description":"8 stk. crabstick, fl\u00F8deost, agurk, avocado inside out, rullet i laks og for\u00E5rsl\u00F8g",
+			"price":138
+		},
+		"850": {
+			"name":"Avocado mago",
+			"description":"8 stk. seaweed salad, tofu, agurk og avocade inside out og sesam",
+			"price":118
+		}
+	},
+	"Diverse":{
+		"852": {
+			"name":"Edamame",
+			"price":45
+		},
+		"851": {
+			"name":"Tangsalat",
+			"price":45
+		}
+	}
+}

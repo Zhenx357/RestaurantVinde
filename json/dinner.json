@@ -1,0 +1,91 @@
+{
+	"Diner transportable buffet nr. 1":{
+		"contains": [
+			"Dygstegte kongerejer",
+			"Dybstegte kyllinger",
+			"Dybstegte bl\u00E6ksprutter",
+			"Dybstegte wan-ton",
+			"Chickenwings",
+			"For\u00E5rsruller",
+			"Kylling i karry",
+			"Gongbao kylling",
+			"Oksek\u00F8d med st\u00E6rk sauce",
+			"Stegte nudler",
+			"Svinek\u00F8d med bambusskud og champignon sauce",
+			"Andesteg",
+			"Oksek\u00F8d deluxe med hai xin sauce",
+			"Ribben med honning sauce",
+			"Frisk frugt",
+			"Sur-s\u00F8d sauce",
+			"Soya souce",
+			"Chili sauce",
+			"Champignon sauce",
+			"Ris"
+		],
+		"price": 178,
+		"min_buy": 20
+	},
+	"Diner transportable buffet nr. 2":{
+		"contains": [
+			"Dygstegte kongerejer",
+			"Dybstegte kyllinger",
+			"Dybstegte bl\u00E6ksprutter",
+			"Chickenwings",
+			"Sm\u00E5 for\u00E5rsruller",
+			"Kylling i karry",
+			"Oksek\u00F8d med st\u00E6rk sauce",
+			"Stegte nudler",
+			"Svinek\u00F8d med bambusskud og champignon sauce",
+			"Andesteg",
+			"Oksek\u00F8d deluxe med hai xin sauce",
+			"Ribben med honning sauce",
+			"Frisk frugt",
+			"Salat",
+			"Sur-s\u00F8d sauce",
+			"Soya souce",
+			"Chili sauce",
+			"Ris"
+			],
+		"sushi":[
+			"2 skiver futo maki",
+			"2 skiver hoso maki",
+			"2 skiver ura maki",
+			"1 nigiri og tilbeh\u00F8r"
+		],
+		"price": 198,
+		"min_buy": 20
+	},
+	"Afhentet buffet nr. 3":{
+		"contains": [
+			"Dygstegte kongerejer",
+			"Dybstegte kyllinger",
+			"Oksek\u00F8d med st\u00E6rk sauce",
+			"For\u00E5rsruller",
+			"Kylling i karry",
+			"Svinek\u00F8d med bambusskud og champignon sauce",
+			"Stegte nudler",
+			"Oksek\u00F8d deluxe med gr\u00F8ntsager",
+			"Salat",
+			"Ris",
+			"Sur-s\u00F8d sauce",
+			"Karry sauce"
+		],
+		"price": 158,
+		"min_buy": 10
+	},
+	"Afhentet buffet nr. 4":{
+		"contains": [
+			"Dygstegte kongerejer",
+			"Dybstegte kyllinger",
+			"Oksek\u00F8d med st\u00E6rk sauce",
+			"For\u00E5rsruller",
+			"Kylling i karry",
+			"Stegte nudler",
+			"Sur-s\u00F8d sauce",
+			"Ris",
+			"Karry sauce"
+		],
+		"price": 158,
+		"min_buy": 5
+	}
+}
