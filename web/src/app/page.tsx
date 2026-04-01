@@ -14,12 +14,16 @@ export default function Home() {
 
   return (
     <div className="space-y-12 pb-20">
-      <section className="grid gap-10 md:grid-cols-[1.05fr,0.95fr] md:items-center">
-        <div className="space-y-5">
-          <p className="text-sm uppercase tracking-[0.4em] text-[var(--accent)]">
-            {hero.eyebrow}
-          </p>
-          <div>
+      <section
+        id="buffet-info"
+        className="relative overflow-hidden bg-gradient-to-br from-[#f9efe6] via-white to-white px-6 py-12 ring-1 ring-black/5"
+      >
+        <div className="grid gap-10 md:grid-cols-2 md:items-center">
+          <div className="space-y-5">
+            <p className="text-sm uppercase tracking-[0.4em] text-[var(--accent)]">
+              {hero.eyebrow}
+            </p>
+            <div>
             <h1 className="text-5xl font-semibold text-[var(--primary)] leading-tight">
               {hero.title}
             </h1>
@@ -50,45 +54,40 @@ export default function Home() {
             <li>Frisk sushi &amp; mongolian barbecue</li>
             <li>Familievenlig</li>
           </ul>
+            </div>
+          {hero.carousel[0] ? (
+            <div className="relative h-80 overflow-hidden shadow-2xl shadow-black/20">
+              <Image
+                src={hero.carousel[0]}
+                alt="Buffet ved Restaurant Vinde"
+                fill
+                sizes="(min-width: 768px) 50vw, 100vw"
+                className="object-cover"
+                priority
+              />
+            </div>
+          ) : null}
         </div>
-        {hero.carousel[0] ? (
-          <div className="relative h-80 overflow-hidden rounded-[3rem] shadow-2xl shadow-black/20">
-            <Image
-              src={hero.carousel[0]}
-              alt="Buffet ved Restaurant Vinde"
-              fill
-              sizes="(min-width: 768px) 45vw, 100vw"
-              className="object-cover"
-              priority
-            />
-          </div>
-        ) : null}
-      </section>
-      <section
-        id="buffet-info"
-        className="flex flex-col gap-6 border-t border-[var(--border)] pt-6 text-sm text-[var(--foreground)]/80 md:flex-row md:items-start md:justify-between"
-      >
-        <InfoBlock title="Pris">
-          <p className="text-2xl font-semibold text-[var(--primary)]">
-            {formatPrice(buffet.dineIn.weekday)} –{" "}
-            {formatPrice(buffet.dineIn.weekend)}
-          </p>
-          <p>Halv pris til børn under 12 år.</p>
-        </InfoBlock>
-        <InfoBlock title="Tidspunkt">
-          <ul>
-            {buffet.buffetTimes.map((slot) => (
-              <li key={slot.label}>
-                {slot.label}: {slot.time}
-              </li>
-            ))}
-          </ul>
-        </InfoBlock>
-        <InfoBlock title="Inkluderet">
-          <p>
-            Sushi, mongolian barbecue, 26 varme retter, salatbar og dessert.
-          </p>
-        </InfoBlock>
+        <div className="mt-10 grid gap-6 text-sm text-[var(--foreground)]/80 md:grid-cols-3">
+          <InfoLine title="Pris">
+            <p className="text-2xl font-semibold text-[var(--primary)]">
+              {formatPrice(buffet.dineIn.weekday)} – {formatPrice(buffet.dineIn.weekend)}
+            </p>
+            <p>Halv pris til børn under 12 år.</p>
+          </InfoLine>
+          <InfoLine title="Tidspunkt">
+            <ul>
+              {buffet.buffetTimes.map((slot) => (
+                <li key={slot.label}>
+                  {slot.label}: {slot.time}
+                </li>
+              ))}
+            </ul>
+          </InfoLine>
+          <InfoLine title="Inkluderet">
+            <p>Sushi, mongolian barbecue, 26 varme retter, salatbar og dessert.</p>
+          </InfoLine>
+        </div>
       </section>
 
       <section className="space-y-5">
@@ -97,11 +96,14 @@ export default function Home() {
         </h2>
         <ul className="grid gap-4 md:grid-cols-3">
           {benefits.map((benefit) => (
-            <li key={benefit.title}>
+            <li
+              key={benefit.title}
+              className="rounded-[1.5rem] bg-white/90 px-4 py-5 shadow-[0_12px_24px_rgba(0,0,0,0.06)]"
+            >
               <p className="text-xs uppercase tracking-[0.3em] text-[var(--accent)]">
                 {benefit.title}
               </p>
-              <p className="text-base text-[var(--foreground)]/80">
+              <p className="mt-2 text-base text-[var(--foreground)]/80">
                 {benefit.description}
               </p>
             </li>
@@ -112,7 +114,7 @@ export default function Home() {
   );
 }
 
-function InfoBlock({
+function InfoLine({
   title,
   children,
 }: {
@@ -120,11 +122,11 @@ function InfoBlock({
   children: React.ReactNode;
 }) {
   return (
-    <div className="flex-1 space-y-1">
+    <div className="border-t border-[var(--border)] pt-4">
       <p className="text-xs uppercase tracking-[0.3em] text-[var(--accent)]">
         {title}
       </p>
-      <div>{children}</div>
+      <div className="mt-1 space-y-1">{children}</div>
     </div>
   );
 }
