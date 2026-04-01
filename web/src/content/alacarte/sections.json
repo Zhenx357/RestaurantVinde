@@ -1,0 +1,137 @@
+[
+  {
+    "id": "forretter",
+    "title": "Forretter",
+    "groups": [
+      {
+        "title": null,
+        "items": [
+          { "number": "1.", "name": "Kyllingespyd og rejer med sur-sød sauce", "dineInPrice": 65, "takeawayPrice": 60 },
+          { "number": "2.", "name": "Seafood suppe", "dineInPrice": 63, "takeawayPrice": 58 },
+          { "number": "3.", "name": "Peking suppe (sur-stærk)", "dineInPrice": 53, "takeawayPrice": 47 },
+          { "number": "4.", "name": "Wan tan suppe", "dineInPrice": 53, "takeawayPrice": 49 },
+          { "number": "5.", "name": "Hønsekødssuppe", "dineInPrice": 50, "takeawayPrice": 47 },
+          { "number": "6.", "name": "Deluxe forårsrulle", "dineInPrice": 53, "takeawayPrice": 49 },
+          { "number": "7.", "name": "Mini forårsruller (5 stk)", "dineInPrice": 53, "takeawayPrice": 49 },
+          { "number": "8.", "name": "Rejecocktail", "dineInPrice": 63, "takeawayPrice": 57 },
+          { "number": "9.", "name": "Stegte wan tan", "dineInPrice": 53, "takeawayPrice": 49 }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "main-courses",
+    "title": "Hovedretter med ris",
+    "groups": [
+      {
+        "title": "Svinekød",
+        "items": [
+          { "number": "10.", "name": "Svinekød chop suey", "dineInPrice": 130, "takeawayPrice": 127 },
+          { "number": "11.", "name": "Svinekød med bambusskud og champignon", "dineInPrice": 129, "takeawayPrice": 127 },
+          { "number": "12.", "name": "Chili-krydret svinekød (stærk)", "dineInPrice": 130, "takeawayPrice": 127 },
+          { "number": "13.", "name": "Svinekød i karry", "dineInPrice": 129, "takeawayPrice": 127 },
+          { "number": "15.", "name": "Ribben med honningsauce", "dineInPrice": 135, "takeawayPrice": 127 }
+        ]
+      },
+      {
+        "title": "Kylling",
+        "items": [
+          { "number": "16.", "name": "Kyllingespyd (3 stk)", "dineInPrice": 78, "takeawayPrice": 78 },
+          { "number": "17.", "name": "Kyllingevinger (10 stk)", "dineInPrice": 115, "takeawayPrice": 135 },
+          { "number": "18.", "name": "Kylling chop suey", "dineInPrice": 143, "takeawayPrice": 135 },
+          { "number": "19.", "name": "Gong bao kylling med cashewnødder", "dineInPrice": 143, "takeawayPrice": 135 },
+          { "number": "20.", "name": "Kylling med bambusskud og champignon", "dineInPrice": 143, "takeawayPrice": 135 },
+          { "number": "21.", "name": "Kylling i karry", "dineInPrice": 143, "takeawayPrice": 135 },
+          { "number": "22.", "name": "Kylling med ananas", "dineInPrice": 143, "takeawayPrice": 135 },
+          { "number": "23.", "name": "Dybstegt kylling med sur-sød sauce", "dineInPrice": 143, "takeawayPrice": 135 }
+        ]
+      },
+      {
+        "title": "Oksekød",
+        "items": [
+          { "number": "25.", "name": "Oksekød chop suey", "dineInPrice": 155, "takeawayPrice": 148 },
+          { "number": "26.", "name": "Oksekød med bambusskud og champignon", "dineInPrice": 153, "takeawayPrice": 148 },
+          { "number": "27.", "name": "Oksekød i karry", "dineInPrice": 155, "takeawayPrice": 148 },
+          { "number": "28.", "name": "Chili-krydret oksekød (stærk)", "dineInPrice": 155, "takeawayPrice": 148 },
+          { "number": "29.", "name": "Oksekød gong bao (stærk)", "dineInPrice": 155, "takeawayPrice": 148 },
+          { "number": "30.", "name": "Oksekød med champignonsauce", "dineInPrice": 155, "takeawayPrice": 148 },
+          { "number": "31.", "name": "Oksekød deluxe med hai xin sauce", "dineInPrice": 165, "takeawayPrice": 158 },
+          { "number": "32.", "name": "Oksekød deluxe med grøntsager", "dineInPrice": 165, "takeawayPrice": 158 }
+        ]
+      },
+      {
+        "title": "And",
+        "items": [
+          { "number": "33.", "name": "And chop suey", "dineInPrice": 165, "takeawayPrice": 158 },
+          { "number": "34.", "name": "And deluxe med grøntsager", "dineInPrice": 168, "takeawayPrice": 160 },
+          { "number": "35.", "name": "And deluxe med tomatsauce", "dineInPrice": 168, "takeawayPrice": 160 },
+          { "number": "36.", "name": "And med champignonsauce", "dineInPrice": 165, "takeawayPrice": 158 },
+          { "number": "37.", "name": "And med bambusskud og champignon", "dineInPrice": 165, "takeawayPrice": 158 },
+          { "number": "38.", "name": "And med stærk sauce", "dineInPrice": 168, "takeawayPrice": 158 },
+          { "number": "39.", "name": "And i karry", "dineInPrice": 165, "takeawayPrice": 158 }
+        ]
+      },
+      {
+        "title": "Fisk & skaldyr",
+        "items": [
+          { "number": "40.", "name": "Dybstegte fisk med sur-sød sauce", "dineInPrice": 153, "takeawayPrice": 143 },
+          { "number": "41.", "name": "Dybstegte blæksprutter med sur-sød sauce", "dineInPrice": 153, "takeawayPrice": 143 },
+          { "number": "42.", "name": "Gong bao blæksprutter (stærk)", "dineInPrice": 153, "takeawayPrice": 143 }
+        ]
+      },
+      {
+        "title": "Ris & nudler",
+        "items": [
+          { "number": "45.", "name": "Stegte ris med grøntsager", "dineInPrice": 132, "takeawayPrice": 122 },
+          { "number": "46.", "name": "Stegte ris deluxe (rejer og kylling)", "dineInPrice": 132, "takeawayPrice": 122 },
+          { "number": "47.", "name": "Stegte nudler med grøntsager", "dineInPrice": 120, "takeawayPrice": 120 },
+          { "number": "48.", "name": "Stegte nudler deluxe (rejer og kylling)", "dineInPrice": 125, "takeawayPrice": 120 },
+          { "number": "49.", "name": "Stegte blandede grøntsager", "dineInPrice": 122, "takeawayPrice": 125 }
+        ]
+      },
+      {
+        "title": "Jernfadsretter",
+        "items": [
+          { "number": "50.", "name": "Kinarejer på jernfad med sæsonens grøntsager", "dineInPrice": 173, "takeawayPrice": 158 },
+          { "number": "51.", "name": "Oksekød på jernfad med husets sauce", "dineInPrice": 165, "takeawayPrice": 151 },
+          { "number": "52.", "name": "Andekød på jernfad med husets sauce", "dineInPrice": 175, "takeawayPrice": 160 }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "kids",
+    "title": "Børnemenu",
+    "groups": [
+      {
+        "title": null,
+        "items": [
+          { "number": "54.", "name": "Rødspættefilet med pommes frites og remulade", "dineInPrice": 67, "takeawayPrice": 67 },
+          { "number": "55.", "name": "Pølser med pommes frites", "dineInPrice": 67, "takeawayPrice": 45 },
+          { "number": "56.", "name": "½ kylling med pommes frites", "dineInPrice": 88, "takeawayPrice": 70 },
+          { "number": "57.", "name": "Mini forårsruller med salat", "dineInPrice": 68, "takeawayPrice": 50 },
+          { "number": "58.", "name": "Pommes frites med remulade", "dineInPrice": 62, "takeawayPrice": 40 }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "desserts",
+    "title": "Desserter og drikke",
+    "groups": [
+      {
+        "title": null,
+        "items": [
+          { "number": "60.", "name": "Pandekage med is", "dineInPrice": 55 },
+          { "number": "61.", "name": "Dybstegte bananer med is", "dineInPrice": 52 },
+          { "number": "62.", "name": "Blandede frugter med is", "dineInPrice": 55 },
+          { "number": "63.", "name": "Is med chokoladesauce", "dineInPrice": 48 },
+          { "number": "64.", "name": "Bananasplit", "dineInPrice": 53 },
+          { "number": "65.", "name": "Chinese te", "dineInPrice": 35 },
+          { "number": "66.", "name": "Kaffe", "dineInPrice": 35 },
+          { "number": "67.", "name": "Irish Coffee", "dineInPrice": 58 }
+        ]
+      }
+    ]
+  }
+]

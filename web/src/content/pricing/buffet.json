@@ -1,0 +1,31 @@
+{
+  "id": "vinde-buffet",
+  "name": "VINDE-BUFFET",
+  "description": "Alle ugens dage 16.30 - 21.30 (serveres kun i restauranten).",
+  "dineIn": {
+    "weekday": 188,
+    "weekend": 208,
+    "childUnder12": 94,
+    "childUnder3": 47
+  },
+  "currency": "DKK",
+  "notes": [
+    "Buffet uden tilkøb af drikkevarer koster 20 kr. ekstra.",
+    "Fri is, kaffe og te er inkluderet.",
+    "Husets vin, øl og sodavand ad libitum i 3 timer koster 348 kr."
+  ],
+  "includes": [
+    "Forret: Peking suppe",
+    "Sushi: Nigiri, Inside-out og Maki",
+    "Mongolian barbecue med fire slags kød og forskellige saucer",
+    "Stor salatbar",
+    "26 varme retter med tilbehør",
+    "Fri is, kaffe og te"
+  ],
+  "sushiIncluded": true,
+  "takeawayAvailable": false,
+  "buffetTimes": [
+    { "label": "Buffet mandag-torsdag", "time": "16:30 – 21:30" },
+    { "label": "Buffet fredag-søndag", "time": "12:00 – 22:30" }
+  ]
+}

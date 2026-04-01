@@ -1,0 +1,23 @@
+{
+  "name": "Restaurant VINDE",
+  "address": {
+    "line1": "Viborgvej 161B",
+    "line2": "8210 Aarhus V",
+    "country": "Danmark"
+  },
+  "map": {
+    "staticImage": "/images/map.png",
+    "googleMapsUrl": "https://www.google.com/maps/place/Viborgvej+161C,+8210+Aarhus+V,+Danmark/@56.16848,10.1591923,17z/data=!3m1!4b1!4m5!3m4!1s0x464c156731dab837:0xf0fd67043efe213e!8m2!3d56.16848!4d10.161381?hl=dk"
+  },
+  "phoneNumbers": ["+45 86 28 88 38", "+45 31 23 54 85"],
+  "email": "aifang@live.dk",
+  "cta": {
+    "label": "Ring og book bord",
+    "href": "tel:+4586288838"
+  },
+  "highlights": [
+    "Vi ligger lige ved COOP365 og LIDL",
+    "Tæt på PureGym",
+    "Store parkeringsmuligheder"
+  ]
+}

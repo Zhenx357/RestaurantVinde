@@ -1,0 +1,13 @@
+{
+  "eyebrow": "Restaurant Vinde",
+  "title": "Kinesisk buffet i Aarhus V",
+  "description": "Over 26 varme retter, frisk sushi og mongolian barbecue – én buffet, alt inkluderet.",
+  "primaryCta": { "label": "Se buffet", "href": "#buffet-info" },
+  "secondaryCta": { "label": "Ring nu", "href": "tel:+4586288838" },
+  "carousel": [
+    "/images/1.jpg",
+    "/images/2.jpg",
+    "/images/3.jpg",
+    "/images/4.jpg"
+  ]
+}

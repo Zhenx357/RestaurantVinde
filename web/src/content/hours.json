@@ -1,0 +1,25 @@
+{
+  "regular": [
+    {
+      "days": "Mandag - Torsdag",
+      "open": "16:00",
+      "close": "22:00"
+    },
+    {
+      "days": "Fredag - Søndag",
+      "open": "12:00",
+      "close": "23:00"
+    }
+  ],
+  "takeaway": [
+    {
+      "label": "Just-Eat afhentning alle dage",
+      "open": "16:00",
+      "close": "21:00"
+    }
+  ],
+  "notes": [
+    "Køkkenet lukker kl. 21:30",
+    "Ring ved særlige åbningstider og helligdage"
+  ]
+}

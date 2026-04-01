@@ -1,0 +1,96 @@
+[
+  {
+    "id": "transportable-1",
+    "name": "Dinner transportable buffet nr. 1",
+    "description": "Klassisk buffet leveret ud af huset.",
+    "items": [
+      "Dybstegte kongerejer",
+      "Dybstegte kyllinger",
+      "Dybstegte blæksprutter",
+      "Dybstegte wan-ton",
+      "Chickenwings",
+      "Forårsruller",
+      "Kylling i karry",
+      "Gongbao kylling",
+      "Oksekød med stærk sauce",
+      "Stegte nudler",
+      "Svinekød med bambusskud og champignonsauce",
+      "Andesteg",
+      "Oksekød deluxe med hai xin sauce",
+      "Ribben med honningsauce",
+      "Frisk frugt",
+      "Saucer og ris"
+    ],
+    "dineInPrice": null,
+    "takeawayPrice": 178,
+    "currency": "DKK",
+    "minGuests": 20
+  },
+  {
+    "id": "transportable-2",
+    "name": "Dinner transportable buffet nr. 2",
+    "description": "Udvidet buffet med sushi.",
+    "items": [
+      "Dybstegte kongerejer",
+      "Dybstegte kyllinger",
+      "Dybstegte blæksprutter",
+      "Chickenwings",
+      "Mini forårsruller",
+      "Kylling i karry",
+      "Oksekød med stærk sauce",
+      "Stegte nudler",
+      "Svinekød med bambusskud og champignonsauce",
+      "Andesteg",
+      "Oksekød deluxe med hai xin sauce",
+      "Ribben med honningsauce",
+      "Frisk frugt og salat",
+      "Saucer og ris"
+    ],
+    "sushi": [
+      "2 skiver futo maki",
+      "2 skiver hoso maki",
+      "2 skiver ura maki",
+      "1 nigiri og tilbehør"
+    ],
+    "takeawayPrice": 198,
+    "currency": "DKK",
+    "minGuests": 20
+  },
+  {
+    "id": "afhentet-3",
+    "name": "Afhentet buffet nr. 3",
+    "description": "Varm buffet klar til afhentning.",
+    "items": [
+      "Dybstegte kongerejer",
+      "Dybstegte kyllinger",
+      "Oksekød med stærk sauce",
+      "Forårsruller",
+      "Kylling i karry",
+      "Svinekød med bambusskud og champignonsauce",
+      "Stegte nudler",
+      "Oksekød deluxe med grøntsager",
+      "Salat",
+      "Ris og saucer"
+    ],
+    "takeawayPrice": 158,
+    "currency": "DKK",
+    "minGuests": 10
+  },
+  {
+    "id": "afhentet-4",
+    "name": "Afhentet buffet nr. 4",
+    "description": "Mindre buffet til mindre selskaber.",
+    "items": [
+      "Dybstegte kongerejer",
+      "Dybstegte kyllinger",
+      "Oksekød med stærk sauce",
+      "Forårsruller",
+      "Kylling i karry",
+      "Stegte nudler",
+      "Saucer og ris"
+    ],
+    "takeawayPrice": 158,
+    "currency": "DKK",
+    "minGuests": 5
+  }
+]

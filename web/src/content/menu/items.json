@@ -1,0 +1,101 @@
+[
+  {
+    "id": "menu-1",
+    "categoryId": "set-menus",
+    "name": "Menu 1",
+    "description": "3-retters menu",
+    "courses": {
+      "forretter": ["Pekingsuppe", "Forårsruller"],
+      "hovedretter": [
+        "Oksekød med stærk sauce",
+        "Andesteg med bambusskud og champignonsauce",
+        "Kylling i karry",
+        "Dybstegte sprøde kinesiske rejer"
+      ],
+      "dessert": []
+    },
+    "dineInPrice": 178,
+    "takeawayPrice": 158,
+    "currency": "DKK",
+    "minGuests": 2,
+    "availability": ["dine-in", "takeaway"]
+  },
+  {
+    "id": "menu-2",
+    "categoryId": "set-menus",
+    "name": "Menu 2",
+    "description": "3-retters menu",
+    "courses": {
+      "forretter": ["Rejecocktail"],
+      "hovedretter": ["Bund af stegte kongerejer belagt med sprød and"],
+      "dessert": []
+    },
+    "dineInPrice": 198,
+    "takeawayPrice": 178,
+    "currency": "DKK",
+    "minGuests": 2,
+    "availability": ["dine-in", "takeaway"]
+  },
+  {
+    "id": "menu-3",
+    "categoryId": "set-menus",
+    "name": "Menu 3",
+    "description": "3 små retter",
+    "courses": {
+      "forretter": [],
+      "hovedretter": [
+        "Kylling i karry",
+        "Oksekød med bambusskud og champignonsauce",
+        "Dybstegte kongerejer"
+      ],
+      "dessert": []
+    },
+    "dineInPrice": 158,
+    "takeawayPrice": 139,
+    "currency": "DKK",
+    "availability": ["dine-in", "takeaway"]
+  },
+  {
+    "id": "selskabsmenu-201",
+    "categoryId": "selskabsmenuer",
+    "name": "Selskabsmenu 201",
+    "description": null,
+    "courses": {
+      "forretter": ["Andekød suppe"],
+      "mellemretter": ["Sprød and med hjemmelavet pandekager"],
+      "hovedretter": [
+        "Stegte kongerejer med krydret salat",
+        "Stegt peking and med grøntsager"
+      ],
+      "dessert": ["Irish coffee eller is"]
+    },
+    "dineInPrice": 208,
+    "takeawayPrice": 208,
+    "currency": "DKK",
+    "minGuests": 2,
+    "availability": ["dine-in", "takeaway"]
+  },
+  {
+    "id": "selskabsmenu-202",
+    "categoryId": "selskabsmenuer",
+    "name": "Selskabsmenu 202",
+    "description": null,
+    "courses": {
+      "forretter": ["Pekingsuppe"],
+      "mellemretter": [
+        "Hjemmelavede forårsruller",
+        "Kylling og rejer på spyd"
+      ],
+      "hovedretter": [
+        "Oksekød med stærk sauce",
+        "Andesteg med bambusskud og champignonsauce"
+      ],
+      "dessert": ["Irish coffee eller is"]
+    },
+    "dineInPrice": 178,
+    "takeawayPrice": 178,
+    "currency": "DKK",
+    "minGuests": 2,
+    "availability": ["dine-in", "takeaway"]
+  }
+]
