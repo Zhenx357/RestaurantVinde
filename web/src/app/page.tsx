@@ -4,13 +4,18 @@ import {
   getBuffetPricing,
   getHeroContent,
   getBuffetBenefits,
+  getOpeningHours,
+  getContactDetails,
 } from "@/lib/content";
 import { formatPrice } from "@/lib/format";
+import { LocationMapEmbed } from "@/components/ui/location-map-embed";
 
 export default function Home() {
   const hero = getHeroContent();
   const buffet = getBuffetPricing();
   getBuffetBenefits();
+  const hours = getOpeningHours();
+  const contact = getContactDetails();
 
   return (
     <div className="space-y-12 pb-20">
@@ -101,23 +106,80 @@ export default function Home() {
           ) : null}
         </div>
       </section>
-    </div>
-  );
-}
 
-function InfoLine({
-  title,
-  children,
-}: {
-  title: string;
-  children: React.ReactNode;
-}) {
-  return (
-    <div>
-      <p className="text-xs uppercase tracking-[0.3em] text-[var(--accent)]">
-        {title}
-      </p>
-      <div className="mt-1 space-y-1">{children}</div>
+      <section className="-mx-5 md:-mx-6 border-[var(--border)] bg-white py-12">
+        <div className="mx-auto grid w-full max-w-6xl gap-10 px-5 md:grid-cols-[minmax(0,2fr)_minmax(0,1.3fr)] md:items-start">
+          <div className="space-y-5 text-sm text-[var(--foreground)]/85">
+            <p className="text-xs uppercase tracking-[0.3em] text-[var(--accent)]">
+              Besøg os
+            </p>
+            <h2 className="text-3xl font-semibold text-[var(--primary)]">
+              Åbningstider & kontakt
+            </h2>
+            <p className="text-base text-[var(--foreground)]">
+              Restaurant VINDE<br />
+              {contact.address.line1}, {contact.address.line2}
+            </p>
+            <p className="text-sm text-[var(--foreground)]/75">
+              Du finder os mellem Coop 365 og PureGym på den ene side og Lidl på den anden side.
+            </p>
+            <div>
+              <p className="font-semibold text-[var(--primary)]">Åbningstider</p>
+              <ul>
+                {hours.regular.map((slot) => (
+                  <li key={slot.days}>
+                    {slot.days}: {slot.open} – {slot.close}
+                  </li>
+                ))}
+              </ul>
+              <p className="text-xs text-[var(--foreground)]/70">
+                Buffet kl. 16.30 – 21.30 alle dage.
+              </p>
+            </div>
+            <div className="space-y-3">
+              <div>
+                <p className="text-xs uppercase tracking-[0.3em] text-[var(--accent)]">
+                  Telefon
+                </p>
+                <a
+                  className="text-[var(--primary)]"
+                  href={`tel:${contact.phoneNumbers[0]?.replace(/\s+/g, "")}`}
+                >
+                  {contact.phoneNumbers[0]}
+                </a>
+              </div>
+              <div>
+                <p className="text-xs uppercase tracking-[0.3em] text-[var(--accent)]">
+                  Mail
+                </p>
+                <a
+                  className="text-[var(--primary)]"
+                  href={`mailto:${contact.email}`}
+                >
+                  {contact.email}
+                </a>
+              </div>
+            </div>
+            <div className="flex flex-wrap gap-3 pt-2 text-xs font-semibold">
+              <Link
+                href={`tel:${contact.phoneNumbers[0]?.replace(/\s+/g, "")}`}
+                className="rounded-full border border-[var(--primary)] px-4 py-2 text-[var(--primary)]"
+              >
+                Ring og book bord
+              </Link>
+            </div>
+          </div>
+          <LocationMapEmbed
+            lat={contact.map.coordinates.lat}
+            lng={contact.map.coordinates.lng}
+            zoom={contact.map.zoom}
+            label={contact.map.label}
+            googleMapsUrl={contact.map.googleMapsUrl}
+            addressLines={[contact.address.line1, contact.address.line2]}
+            fallbackImage={contact.map.staticImage}
+          />
+        </div>
+      </section>
     </div>
   );
 }

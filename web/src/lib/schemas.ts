@@ -83,8 +83,14 @@ export const contactSchema = z.object({
     country: z.string(),
   }),
   map: z.object({
-    staticImage: z.string(),
+    staticImage: z.string().optional(),
     googleMapsUrl: z.string().url(),
+    coordinates: z.object({
+      lat: z.number(),
+      lng: z.number(),
+    }),
+    zoom: z.number().int().default(16),
+    label: z.string(),
   }),
   phoneNumbers: z.array(z.string()),
   email: z.string().email(),

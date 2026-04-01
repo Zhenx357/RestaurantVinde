@@ -93,9 +93,41 @@ header.carousel .fill {
     display: block;
     font-style: italic;
 }
-#map {
+
+.location-map {
     width: 100%;
-    height: 200px;
+    height: 260px;
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+    background: #f7f7f7;
+    box-shadow: inset 0 0 0 1px rgba(0,0,0,0.05);
+}
+
+.location-map .leaflet-control-attribution {
+    font-size: 11px;
+}
+
+.location-map__fallback {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+    color: #555;
+}
+
+.location-map__fallback a {
+    font-weight: 600;
+    color: #990000;
+}
+
+@media (min-width: 992px) {
+    .location-map {
+        height: 320px;
+    }
 }
 .img-portfolio img {
     height:130px;

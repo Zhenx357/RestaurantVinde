@@ -188,3 +188,12 @@ client.config(function($stateProvider, $urlRouterProvider) {
     
 });
 
+client.run(function($rootScope, $timeout) {
+    $rootScope.$on('$viewContentLoaded', function () {
+        $timeout(function () {
+            if (window.RestaurantVindeMap && typeof window.RestaurantVindeMap.init === 'function') {
+                window.RestaurantVindeMap.init();
+            }
+        }, 0);
+    });
+});

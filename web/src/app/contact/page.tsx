@@ -1,4 +1,5 @@
 import { getContactDetails, getOpeningHours } from "@/lib/content";
+import { LocationMapEmbed } from "@/components/ui/location-map-embed";
 
 export default function ContactPage() {
   const contact = getContactDetails();
@@ -64,8 +65,22 @@ export default function ContactPage() {
         </ul>
       </section>
 
-      <section className="rounded-2xl border border-[var(--border)] bg-white p-4">
-        <p>Kort: {contact.map.googleMapsUrl}</p>
+      <section className="space-y-4 rounded-2xl border border-[var(--border)] bg-white p-4">
+        <div>
+          <h2 className="text-xl font-semibold text-[var(--primary)]">Find vej</h2>
+          <p className="text-[var(--foreground)]/80">
+            Vi bruger Google Maps Embed API for at vise et interaktivt kort &mdash; klik for at åbne vejvisning.
+          </p>
+        </div>
+        <LocationMapEmbed
+          lat={contact.map.coordinates.lat}
+          lng={contact.map.coordinates.lng}
+          zoom={contact.map.zoom}
+          label={contact.map.label}
+          googleMapsUrl={contact.map.googleMapsUrl}
+          addressLines={[contact.address.line1, contact.address.line2]}
+          fallbackImage={contact.map.staticImage}
+        />
       </section>
     </div>
   );
