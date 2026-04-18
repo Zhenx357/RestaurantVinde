@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Geist, Geist_Mono } from "next/font/google";
-import { getContactDetails, getNavigation } from "@/lib/content";
+import { getContactDetails, getNavigation } from "@/data/site";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -36,19 +36,19 @@ export default function RootLayout({
     >
       <body>
         <div className="flex min-h-screen flex-col">
-          <header className="border-b border-[var(--border)] bg-[var(--surface)]">
+          <header className="border-b border-[var(--primary-dark)] bg-[var(--primary)] text-white">
             <div className="mx-auto flex max-w-6xl flex-wrap items-center gap-4 px-5 py-4">
               <Link
                 href="/"
-                className="text-lg font-semibold uppercase tracking-[0.2em] text-[var(--primary)]"
+                className="text-lg font-semibold uppercase tracking-[0.2em]"
               >
                 Restaurant Vinde
               </Link>
               <nav className="ml-auto">
-                <ul className="flex flex-wrap items-center gap-4 text-sm font-semibold text-[var(--foreground)]">
+                <ul className="flex flex-wrap items-center gap-4 text-sm font-semibold text-white/80">
                   {navigation.map((item) => (
                     <li key={item.href}>
-                      <Link className="hover:text-[var(--primary)]" href={item.href}>
+                      <Link className="hover:text-white" href={item.href}>
                         {item.label}
                       </Link>
                     </li>
@@ -58,13 +58,13 @@ export default function RootLayout({
               <div className="flex items-center gap-2 text-sm">
                 <Link
                   href="/takeaway"
-                  className="rounded-full border border-[var(--primary)] px-4 py-2 font-semibold text-[var(--primary)]"
+                  className="rounded-full border border-white px-4 py-2 font-semibold text-white hover:bg-white/10"
                 >
                   Takeaway
                 </Link>
                 <Link
                   href={`tel:${primaryPhone}`}
-                  className="rounded-full bg-[var(--primary)] px-4 py-2 font-semibold text-white"
+                  className="rounded-full bg-white px-4 py-2 font-semibold text-[var(--primary)]"
                 >
                   Book bord
                 </Link>
@@ -74,7 +74,7 @@ export default function RootLayout({
           <main className="flex-1">
             <div className="mx-auto w-full max-w-6xl px-5 py-10">{children}</div>
           </main>
-          <footer className="border-t border-[var(--border)] bg-white text-sm text-[var(--foreground)]">
+          <footer className="border-t border-[var(--primary-dark)] bg-[var(--primary)] text-sm text-white">
             <div className="mx-auto flex max-w-5xl flex-wrap items-center justify-between gap-4 px-5 py-5">
               <div>
                 <p className="font-semibold">{contact.name}</p>

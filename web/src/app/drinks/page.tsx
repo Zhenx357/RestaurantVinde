@@ -1,28 +1,21 @@
-import { getDrinkCategories } from "@/lib/content";
+import { PageHeader } from "@/components/sections/page-header";
+import { SectionCard } from "@/components/sections/section-card";
+import { listDrinkCategories } from "@/data/menu";
 import { formatPrice } from "@/lib/format";
 
 export default function DrinksPage() {
-  const categories = getDrinkCategories();
+  const categories = listDrinkCategories();
 
   return (
     <div className="space-y-8 text-sm">
-      <header className="space-y-2">
-        <p className="text-sm uppercase tracking-[0.25em] text-[var(--accent)]">
-          Drikkekort
-        </p>
-        <h1 className="text-3xl font-semibold text-[var(--primary)]">
-          Vin, bobler og alkoholfri
-        </h1>
-        <p className="text-[var(--foreground)]/80">
-          Hele kortet hentes fra JSON, så månedens vin og øvrige kategorier kan opdateres uden kode.
-        </p>
-      </header>
+      <PageHeader
+        eyebrow="Drikkekort"
+        title="Vin, bobler og alkoholfri"
+        description="Hele kortet hentes fra JSON, så månedens vin og øvrige kategorier kan opdateres uden kode."
+      />
 
       {categories.map((category) => (
-        <section
-          key={category.id}
-          className="rounded-2xl border border-[var(--border)] bg-white p-5"
-        >
+        <SectionCard key={category.id}>
           <h2 className="text-2xl font-semibold text-[var(--primary)]">
             {category.title}
           </h2>
@@ -55,7 +48,7 @@ export default function DrinksPage() {
               </li>
             ))}
           </ul>
-        </section>
+        </SectionCard>
       ))}
     </div>
   );

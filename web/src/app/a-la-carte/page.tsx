@@ -1,25 +1,21 @@
-import { getAlaCarteSections } from "@/lib/content";
+import { PageHeader } from "@/components/sections/page-header";
+import { SectionCard } from "@/components/sections/section-card";
+import { listAlaCarteSections } from "@/data/menu";
 import { formatPrice } from "@/lib/format";
 
 export default function AlaCartePage() {
-  const sections = getAlaCarteSections();
+  const sections = listAlaCarteSections();
 
   return (
     <div className="space-y-8 text-sm">
-      <header className="space-y-2">
-        <p className="text-sm uppercase tracking-[0.25em] text-[var(--accent)]">
-          Kinesisk à la carte
-        </p>
-        <h1 className="text-3xl font-semibold text-[var(--primary)]">
-          Klassiske retter med unikke numre
-        </h1>
-        <p className="text-[var(--foreground)]/80">
-          Alle retter kommer fra JSON-filer, så priser og beskrivelser kan redigeres uden kode. Nummereringen matcher menukortet på restaurantens materialer.
-        </p>
-      </header>
+      <PageHeader
+        eyebrow="Kinesisk à la carte"
+        title="Klassiske retter med unikke numre"
+        description="Alle retter kommer fra JSON-filer, så priser og beskrivelser kan redigeres uden kode. Nummereringen matcher menukortet på restaurantens materialer."
+      />
 
       {sections.map((section) => (
-        <section key={section.id} id={section.id} className="rounded-2xl border border-[var(--border)] bg-white p-5">
+        <SectionCard key={section.id} id={section.id}>
           <h2 className="text-2xl font-semibold text-[var(--primary)]">{section.title}</h2>
           <div className="mt-4 space-y-4">
             {section.groups.map((group, index) => (
@@ -49,7 +45,7 @@ export default function AlaCartePage() {
               </div>
             ))}
           </div>
-        </section>
+        </SectionCard>
       ))}
     </div>
   );

@@ -1,4 +1,6 @@
-import { getContactDetails, getOpeningHours } from "@/lib/content";
+import { PageHeader } from "@/components/sections/page-header";
+import { SectionCard } from "@/components/sections/section-card";
+import { getContactDetails, getOpeningHours } from "@/data/site";
 import { LocationMapEmbed } from "@/components/ui/location-map-embed";
 
 export default function ContactPage() {
@@ -7,17 +9,13 @@ export default function ContactPage() {
 
   return (
     <div className="space-y-6 text-sm text-[var(--foreground)]">
-      <header className="space-y-2">
-        <p className="text-sm uppercase tracking-[0.25em] text-[var(--accent)]">
-          Kontakt
-        </p>
-        <h1 className="text-3xl font-semibold text-[var(--primary)]">Kontakt og åbningstider</h1>
-        <p className="text-[var(--foreground)]/80">
-          Ét sted at vedligeholde adresse, telefon, mail og tidsplan. Perfekt til kommende admin-panel.
-        </p>
-      </header>
+      <PageHeader
+        eyebrow="Kontakt"
+        title="Kontakt og åbningstider"
+        description="Ét sted at vedligeholde adresse, telefon, mail og tidsplan. Perfekt til kommende admin-panel."
+      />
 
-      <section className="space-y-2 rounded-2xl border border-[var(--border)] bg-white p-4">
+      <SectionCard className="space-y-2 p-4">
         <p className="font-semibold">{contact.name}</p>
         <p>{contact.address.line1}</p>
         <p>{contact.address.line2}</p>
@@ -40,9 +38,9 @@ export default function ContactPage() {
             <li key={highlight}>{highlight}</li>
           ))}
         </ul>
-      </section>
+      </SectionCard>
 
-      <section className="space-y-2 rounded-2xl border border-[var(--border)] bg-white p-4">
+      <SectionCard className="space-y-2 p-4">
         <h2 className="text-xl font-semibold text-[var(--primary)]">Åbningstider</h2>
         <ul>
           {hours.regular.map((window) => (
@@ -63,9 +61,9 @@ export default function ContactPage() {
             <li key={note}>{note}</li>
           ))}
         </ul>
-      </section>
+      </SectionCard>
 
-      <section className="space-y-4 rounded-2xl border border-[var(--border)] bg-white p-4">
+      <SectionCard className="space-y-4 p-4">
         <div>
           <h2 className="text-xl font-semibold text-[var(--primary)]">Find vej</h2>
           <p className="text-[var(--foreground)]/80">
@@ -81,7 +79,7 @@ export default function ContactPage() {
           addressLines={[contact.address.line1, contact.address.line2]}
           fallbackImage={contact.map.staticImage}
         />
-      </section>
+      </SectionCard>
     </div>
   );
 }
