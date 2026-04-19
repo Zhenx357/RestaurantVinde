@@ -76,7 +76,7 @@ export function SiteHeader({ bookHref }: SiteHeaderProps) {
             className="rounded-[var(--radius-xl)] bg-[var(--background)] px-6 py-2 text-[11px] font-bold uppercase tracking-[0.1em] transition-colors hover:bg-white"
             style={{ color: "#8B0000" }}
           >
-            Book Table
+            Reserver Bord
           </Link>
         </div>
       </div>
