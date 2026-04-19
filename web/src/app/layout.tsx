@@ -1,17 +1,19 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Geist, Geist_Mono } from "next/font/google";
-import { getContactDetails, getNavigation } from "@/data/site";
+import { Manrope, Noto_Serif } from "next/font/google";
+import { SiteHeader } from "@/components/layout/site-header";
+import { getContactDetails } from "@/data/site";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const manrope = Manrope({
+  variable: "--font-body",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const notoSerif = Noto_Serif({
+  variable: "--font-display",
   subsets: ["latin"],
+  weight: ["400", "700", "900"],
 });
 
 export const metadata: Metadata = {
@@ -25,79 +27,89 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const navigation = getNavigation();
   const contact = getContactDetails();
-  const primaryPhone = contact.phoneNumbers[0]?.replace(" ", "");
+  const primaryPhone = contact.phoneNumbers[0]?.replace(/\s+/g, "");
 
   return (
     <html
       lang="da"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${manrope.variable} ${notoSerif.variable} h-full antialiased`}
     >
       <body>
         <div className="flex min-h-screen flex-col">
-          <header className="border-b border-[var(--primary-dark)] bg-[var(--primary)] text-white">
-            <div className="mx-auto flex max-w-6xl flex-wrap items-center gap-4 px-5 py-4">
-              <Link
-                href="/"
-                className="text-lg font-semibold uppercase tracking-[0.2em]"
-              >
-                Restaurant Vinde
-              </Link>
-              <nav className="ml-auto">
-                <ul className="flex flex-wrap items-center gap-4 text-sm font-semibold text-white/80">
-                  {navigation.map((item) => (
-                    <li key={item.href}>
-                      <Link className="hover:text-white" href={item.href}>
-                        {item.label}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </nav>
-              <div className="flex items-center gap-2 text-sm">
-                <Link
-                  href="/takeaway"
-                  className="rounded-full border border-white px-4 py-2 font-semibold text-white hover:bg-white/10"
-                >
-                  Takeaway
-                </Link>
-                <Link
-                  href={`tel:${primaryPhone}`}
-                  className="rounded-full bg-white px-4 py-2 font-semibold text-[var(--primary)]"
-                >
-                  Book bord
-                </Link>
-              </div>
-            </div>
-          </header>
-          <main className="flex-1">
-            <div className="mx-auto w-full max-w-6xl px-5 py-10">{children}</div>
-          </main>
-          <footer className="border-t border-[var(--primary-dark)] bg-[var(--primary)] text-sm text-white">
-            <div className="mx-auto flex max-w-5xl flex-wrap items-center justify-between gap-4 px-5 py-5">
-              <div>
-                <p className="font-semibold">{contact.name}</p>
-                <p>
-                  {contact.address.line1}, {contact.address.line2}
-                </p>
-              </div>
-              <div>
-                <p>
-                  Telefon:{" "}
-                  {contact.phoneNumbers
-                    .map((phone) => phone.replace("+45 ", ""))
-                    .join(" / ")}
-                </p>
-                <p>
-                  E-mail:{" "}
-                  <a className="underline" href={`mailto:${contact.email}`}>
-                    {contact.email}
-                  </a>
-                </p>
+          <SiteHeader bookHref={`tel:${primaryPhone}`} />
+
+          <main className="flex-1 pt-20">{children}</main>
+
+          <footer className="border-t border-[color:rgba(227,190,184,0.14)] bg-[var(--primary-strong)] py-8 text-[12px] text-[color:rgba(255,248,239,0.8)]">
+            <div className="mx-auto max-w-screen-2xl px-6 lg:px-12">
+              <div className="grid gap-6 md:grid-cols-4">
+                <div className="space-y-1">
+                  <p className="mb-1 font-display text-sm uppercase tracking-[0.14em] text-white">
+                    Restaurant Vinde
+                  </p>
+                  <p>{contact.address.line1}</p>
+                  <p>{contact.address.line2}</p>
+                </div>
+
+                <div className="space-y-1">
+                  <p className="mb-1 font-display text-sm uppercase tracking-[0.14em] text-white">
+                    Kontakt
+                  </p>
+                  <p>Telefon: {contact.phoneNumbers[0].replace("+45 ", "")}</p>
+                  <p>
+                    E-mail:{" "}
+                    <Link
+                      href={`mailto:${contact.email}`}
+                      className="transition-colors hover:text-white"
+                    >
+                      {contact.email}
+                    </Link>
+                  </p>
+                </div>
+
+                <div className="space-y-1">
+                  <p className="mb-1 font-display text-sm uppercase tracking-[0.14em] text-white">
+                    Takeaway
+                  </p>
+                  <Link
+                    href="/takeaway"
+                    className="block transition-colors hover:text-white"
+                  >
+                    Afhentning
+                  </Link>
+                  <Link
+                    href="/takeaway"
+                    className="block transition-colors hover:text-white"
+                  >
+                    Levering
+                  </Link>
+                </div>
+
+                <div className="space-y-1 md:text-right">
+                  <p>CVR: 34887012</p>
+                  <Link
+                    href="/contact"
+                    className="mb-2 inline-block underline decoration-[color:rgba(255,248,239,0.4)] underline-offset-2 transition-colors hover:text-white"
+                  >
+                    Smiley info
+                  </Link>
+                  <div>
+                    <Link
+                      href="https://www.facebook.com"
+                      aria-label="Facebook"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex text-[var(--background)]/80 transition-colors hover:text-white"
+                    >
+                      <FacebookIcon />
+                    </Link>
+                  </div>
+                </div>
               </div>
             </div>
           </footer>
+
           <MobileActionBar
             phone={primaryPhone}
             mapUrl={contact.map.googleMapsUrl}
@@ -116,8 +128,9 @@ function MobileActionBar({
   mapUrl: string;
 }) {
   if (!phone) return null;
+
   return (
-    <div className="fixed bottom-0 left-0 right-0 border-t border-[var(--border)] bg-white shadow-lg md:hidden">
+    <div className="fixed bottom-0 left-0 right-0 border-t border-[var(--border-soft)] bg-[var(--surface)] shadow-[0_-8px_24px_rgba(30,27,19,0.08)] md:hidden">
       <div className="flex items-center justify-between px-4 py-3 text-sm font-semibold text-[var(--primary)]">
         <LinkButton href={`tel:${phone}`}>Ring</LinkButton>
         <LinkButton href={mapUrl}>Find vej</LinkButton>
@@ -136,10 +149,18 @@ function LinkButton({
 }) {
   return (
     <Link
-      className="rounded-full border border-[var(--primary)] px-4 py-2 text-center"
+      className="rounded-[var(--radius-xl)] border border-[var(--primary)]/20 px-4 py-2 text-center"
       href={href}
     >
       {children}
     </Link>
+  );
+}
+
+function FacebookIcon() {
+  return (
+    <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
+      <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" />
+    </svg>
   );
 }

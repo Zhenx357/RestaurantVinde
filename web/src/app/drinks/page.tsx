@@ -7,7 +7,7 @@ export default function DrinksPage() {
   const categories = listDrinkCategories();
 
   return (
-    <div className="space-y-8 text-sm">
+    <div className="mx-auto w-full max-w-6xl space-y-8 px-5 py-10 text-sm md:px-6">
       <PageHeader
         eyebrow="Drikkekort"
         title="Vin, bobler og alkoholfri"

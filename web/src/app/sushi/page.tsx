@@ -8,7 +8,7 @@ export default function SushiPage() {
   const sections = listSushiSections();
 
   return (
-    <div className="space-y-8 text-sm">
+    <div className="mx-auto w-full max-w-6xl space-y-8 px-5 py-10 text-sm md:px-6">
       <PageHeader
         eyebrow="Sushi"
         title="Sushi-kort med kategorier og anker-links"

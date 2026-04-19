@@ -8,7 +8,7 @@ export default function ContactPage() {
   const hours = getOpeningHours();
 
   return (
-    <div className="space-y-6 text-sm text-[var(--foreground)]">
+    <div className="mx-auto w-full max-w-6xl space-y-6 px-5 py-10 text-sm text-[var(--foreground)] md:px-6">
       <PageHeader
         eyebrow="Kontakt"
         title="Kontakt og åbningstider"

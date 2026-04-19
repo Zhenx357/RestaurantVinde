@@ -7,7 +7,7 @@ export default function AlaCartePage() {
   const sections = listAlaCarteSections();
 
   return (
-    <div className="space-y-8 text-sm">
+    <div className="mx-auto w-full max-w-6xl space-y-8 px-5 py-10 text-sm md:px-6">
       <PageHeader
         eyebrow="Kinesisk à la carte"
         title="Klassiske retter med unikke numre"

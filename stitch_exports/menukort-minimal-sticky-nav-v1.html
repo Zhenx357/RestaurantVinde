@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+
+<html class="light" lang="da"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Menu - Vinde Heritage</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "tertiary-fixed-dim": "#c8c6c5",
+                        "on-error-container": "#93000a",
+                        "on-secondary": "#ffffff",
+                        "background": "#fff8ef",
+                        "outline": "#8e706b",
+                        "secondary-fixed-dim": "#e9c176",
+                        "primary-fixed-dim": "#ffb4a8",
+                        "on-background": "#1e1b13",
+                        "on-tertiary-container": "#b1aeae",
+                        "tertiary-fixed": "#e5e2e1",
+                        "primary-container": "#8b0000",
+                        "surface-container-lowest": "#ffffff",
+                        "primary": "#610000",
+                        "inverse-on-surface": "#f8f0e1",
+                        "error": "#ba1a1a",
+                        "tertiary-container": "#434242",
+                        "surface-dim": "#e1d9cb",
+                        "tertiary": "#2c2c2c",
+                        "on-tertiary-fixed": "#1c1b1b",
+                        "on-primary-fixed-variant": "#920703",
+                        "surface-bright": "#fff8ef",
+                        "on-secondary-container": "#785a1a",
+                        "on-error": "#ffffff",
+                        "on-secondary-fixed": "#261900",
+                        "inverse-surface": "#343026",
+                        "surface-container-highest": "#e9e2d3",
+                        "surface-container": "#f5edde",
+                        "secondary-container": "#fed488",
+                        "on-tertiary-fixed-variant": "#474746",
+                        "on-primary-fixed": "#410000",
+                        "surface-variant": "#e9e2d3",
+                        "surface-tint": "#b52619",
+                        "outline-variant": "#e3beb8",
+                        "on-primary-container": "#ff907f",
+                        "primary-fixed": "#ffdad4",
+                        "on-secondary-fixed-variant": "#5d4201",
+                        "on-surface": "#1e1b13",
+                        "secondary": "#775a19",
+                        "on-tertiary": "#ffffff",
+                        "surface": "#fff8ef",
+                        "secondary-fixed": "#ffdea5",
+                        "on-primary": "#ffffff",
+                        "inverse-primary": "#ffb4a8",
+                        "surface-container-high": "#efe7d9",
+                        "error-container": "#ffdad6",
+                        "surface-container-low": "#fbf3e4",
+                        "on-surface-variant": "#5a403c"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    fontFamily: {
+                        "headline": ["Noto Serif", "serif"],
+                        "body": ["Manrope", "sans-serif"],
+                        "label": ["Manrope", "sans-serif"]
+                    },
+                    fontSize: {
+                        'display-lg': ['3.5rem', { lineHeight: '4rem', letterSpacing: '-0.02em' }],
+                        'headline-lg': ['2rem', { lineHeight: '2.5rem', letterSpacing: '-0.02em' }],
+                        'body-lg': ['1.125rem', { lineHeight: '1.75rem' }],
+                        'label-md': ['0.875rem', { lineHeight: '1.25rem', letterSpacing: '0.05em' }],
+                        'label-sm': ['0.75rem', { lineHeight: '1rem', letterSpacing: '0.05em' }],
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        /* Smooth scrolling for sticky nav */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body antialiased selection:bg-primary-container selection:text-white flex flex-col min-h-screen">
+<!-- TopAppBar -->
+<header class="bg-[#fff8ef] dark:bg-stone-950 docked full-width top-0 z-50 relative">
+<div class="flex justify-between items-center w-full px-8 h-24 max-w-7xl mx-auto">
+<div class="text-2xl font-serif font-bold text-[#8B0000] dark:text-red-500">
+                Vinde Heritage
+            </div>
+<nav class="hidden md:flex gap-8 font-serif text-display-lg tracking-tight text-[#8B0000] dark:text-red-500">
+<a class="text-stone-600 dark:text-stone-400 hover:text-[#610000] transition-colors scale-95 duration-200" href="#">Hjem</a>
+<a class="text-[#8B0000] dark:text-red-400 border-b-2 border-[#8B0000] pb-1 hover:text-[#610000] transition-colors scale-95 duration-200" href="#">Menu</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-[#610000] transition-colors scale-95 duration-200" href="#">Om os</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-[#610000] transition-colors scale-95 duration-200" href="#">Kontakt</a>
+</nav>
+<button class="bg-[#8B0000] text-white font-label uppercase tracking-widest text-label-md px-6 py-3 rounded-xl hover:bg-[#610000] transition-colors scale-95 duration-200">
+                Bestil Bord
+            </button>
+</div>
+</header>
+<div class="flex flex-col lg:flex-row flex-1">
+<!-- Left Navigation Bar -->
+<aside class="hidden lg:block w-72 flex-shrink-0 sticky top-8 h-[calc(100vh-2rem)] pl-12 pr-6 py-12 overflow-y-auto z-30">
+<nav class="flex flex-col gap-6 font-headline text-lg">
+<a class="text-[#8B0000] dark:text-red-400 font-bold transition-colors border-l-2 border-[#8B0000] pl-4" href="#sammensatte">Sammensatte Menuer</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-[#8B0000] transition-colors pl-4 border-l-2 border-transparent hover:border-stone-300" href="#selskabs">Selskabsmenuer</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-[#8B0000] transition-colors pl-4 border-l-2 border-transparent hover:border-stone-300" href="#forretter">Forretter</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-[#8B0000] transition-colors pl-4 border-l-2 border-transparent hover:border-stone-300" href="#hovedretter">Hovedretter</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-[#8B0000] transition-colors pl-4 border-l-2 border-transparent hover:border-stone-300" href="#">Desserter</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-[#8B0000] transition-colors pl-4 border-l-2 border-transparent hover:border-stone-300" href="#">Drikkevarer</a>
+</nav>
+</aside>
+<div class="flex-1 min-w-0">
+<!-- TopNavBar (Sticky Sub-nav) - Mobile/Tablet Only -->
+<nav class="lg:hidden bg-[#fff8ef]/80 dark:bg-stone-950/80 backdrop-blur-xl sticky top-0 w-full z-40 tonal background shift to surface-container border-b border-outline-variant/20">
+<div class="flex justify-center gap-12 py-4 w-full overflow-x-auto px-8 font-sans text-label-md uppercase tracking-widest">
+<a class="text-[#8B0000] dark:text-red-400 font-bold border-b-2 border-[#8B0000] hover:text-[#8B0000] transition-all whitespace-nowrap" href="#sammensatte">Sammensatte Menuer</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-[#8B0000] transition-all whitespace-nowrap" href="#selskabs">Selskabsmenuer</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-[#8B0000] transition-all whitespace-nowrap" href="#forretter">Forretter</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-[#8B0000] transition-all whitespace-nowrap" href="#hovedretter">Hovedretter</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-[#8B0000] transition-all whitespace-nowrap" href="#">Desserter</a>
+<a class="text-stone-500 dark:text-stone-400 hover:text-[#8B0000] transition-all whitespace-nowrap" href="#">Drikkevarer</a>
+</div>
+</nav>
+<main>
+<!-- Section 1: Sammensatte Menuer -->
+<section class="bg-surface-container-low py-24 px-8" id="sammensatte">
+<div class="max-w-4xl mx-auto">
+<h2 class="font-headline text-display-lg text-primary mb-16 text-center">Sammensatte Menuer</h2>
+<div class="space-y-12">
+<!-- Menu 1 -->
+<div class="flex justify-between items-start group">
+<div class="flex gap-6">
+<div class="w-8 flex-shrink-0"></div>
+<div>
+<h3 class="font-headline text-xl text-on-surface group-hover:text-primary transition-colors">Menu 1</h3>
+<div class="mt-2 space-y-2">
+<p class="font-label text-secondary uppercase tracking-widest text-xs">Forretter</p>
+<p class="font-body text-on-surface-variant text-sm">Pekingsuppe, Forårsruller</p>
+<p class="font-label text-secondary uppercase tracking-widest text-xs mt-3">Hovedretter</p>
+<p class="font-body text-on-surface-variant text-sm">Oksekød, Andesteg, Kylling, Rejer</p>
+</div>
+</div>
+</div>
+<span class="font-label text-primary text-lg font-bold tracking-widest whitespace-nowrap">178,-</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: Selskabsmenuer -->
+<section class="bg-surface py-24 px-8" id="selskabs">
+<div class="max-w-4xl mx-auto">
+<div class="text-center mb-16">
+<span class="font-label text-secondary uppercase tracking-widest mb-4 block">Store oplevelser</span>
+<h2 class="font-headline text-display-lg text-primary">Selskabsmenuer</h2>
+<p class="font-body text-body-lg text-on-surface-variant mt-6">En kurateret rejse gennem de fineste traditioner, skabt til at deles.</p>
+</div>
+<div class="space-y-12">
+<!-- Selskabsmenu 201 -->
+<div class="flex justify-between items-start group">
+<div class="flex gap-6">
+<div class="w-8 flex-shrink-0"></div>
+<div>
+<h3 class="font-headline text-xl text-on-surface group-hover:text-primary transition-colors">Selskabsmenu 201</h3>
+<div class="mt-2 space-y-2">
+<p class="font-label text-secondary uppercase tracking-widest text-xs">Forretter</p>
+<p class="font-body text-on-surface-variant text-sm">Andekød suppe</p>
+<p class="font-label text-secondary uppercase tracking-widest text-xs mt-3">Mellemretter</p>
+<p class="font-body text-on-surface-variant text-sm">Sprød and</p>
+<p class="font-label text-secondary uppercase tracking-widest text-xs mt-3">Hovedretter</p>
+<p class="font-body text-on-surface-variant text-sm">Kongerejer, Peking and</p>
+<p class="font-label text-secondary uppercase tracking-widest text-xs mt-3">Dessert</p>
+<p class="font-body text-on-surface-variant text-sm">Irish coffee / is</p>
+</div>
+</div>
+</div>
+<span class="font-label text-primary text-lg font-bold tracking-widest whitespace-nowrap">208,-</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Forretter -->
+<section class="bg-surface-container py-24 px-8" id="forretter">
+<div class="max-w-4xl mx-auto">
+<h2 class="font-headline text-display-lg text-primary text-center mb-16">Forretter</h2>
+<div class="space-y-8">
+<!-- Item 1 -->
+<div class="flex justify-between items-start group">
+<div class="flex gap-6">
+<span class="font-label text-secondary text-lg w-8 flex-shrink-0">1.</span>
+<div>
+<h3 class="font-headline text-xl text-on-surface group-hover:text-primary transition-colors">Kyllingespyd</h3>
+<p class="font-body text-on-surface-variant text-sm mt-1">Med let krydret peanutsauce.</p>
+</div>
+</div>
+<span class="font-label text-primary text-lg font-bold tracking-widest whitespace-nowrap">65,-</span>
+</div>
+<!-- Item 2 -->
+<div class="flex justify-between items-start group">
+<div class="flex gap-6">
+<span class="font-label text-secondary text-lg w-8 flex-shrink-0">2.</span>
+<div>
+<h3 class="font-headline text-xl text-on-surface group-hover:text-primary transition-colors">Hjemmelavede Forårsruller</h3>
+<p class="font-body text-on-surface-variant text-sm mt-1">Sprøde ruller med svinekød og friske grøntsager.</p>
+</div>
+</div>
+<span class="font-label text-primary text-lg font-bold tracking-widest whitespace-nowrap">58,-</span>
+</div>
+<!-- Item 3 -->
+<div class="flex justify-between items-start group">
+<div class="flex gap-6">
+<span class="font-label text-secondary text-lg w-8 flex-shrink-0">3.</span>
+<div>
+<h3 class="font-headline text-xl text-on-surface group-hover:text-primary transition-colors">Pekingsuppe</h3>
+<p class="font-body text-on-surface-variant text-sm mt-1">Klassisk syrlig og stærk suppe.</p>
+</div>
+</div>
+<span class="font-label text-primary text-lg font-bold tracking-widest whitespace-nowrap">55,-</span>
+</div>
+<!-- Item 4 -->
+<div class="flex justify-between items-start group">
+<div class="flex gap-6">
+<span class="font-label text-secondary text-lg w-8 flex-shrink-0">4.</span>
+<div>
+<h3 class="font-headline text-xl text-on-surface group-hover:text-primary transition-colors">Indbagte Kongerejer</h3>
+<p class="font-body text-on-surface-variant text-sm mt-1">Serveres med sur-sød sauce.</p>
+</div>
+</div>
+<span class="font-label text-primary text-lg font-bold tracking-widest whitespace-nowrap">72,-</span>
+</div>
+<!-- Item 5 -->
+<div class="flex justify-between items-start group">
+<div class="flex gap-6">
+<span class="font-label text-secondary text-lg w-8 flex-shrink-0">5.</span>
+<div>
+<h3 class="font-headline text-xl text-on-surface group-hover:text-primary transition-colors">Wan Tan Suppe</h3>
+<p class="font-body text-on-surface-variant text-sm mt-1">Klar suppe med kødfyldte dejpakker.</p>
+</div>
+</div>
+<span class="font-label text-primary text-lg font-bold tracking-widest whitespace-nowrap">55,-</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: Hovedretter -->
+<section class="bg-surface-container-low py-24 px-8" id="hovedretter">
+<div class="max-w-4xl mx-auto">
+<h2 class="font-headline text-display-lg text-primary text-center mb-16">Hovedretter<br/><span class="text-headline-lg text-secondary">MED RIS</span></h2>
+<!-- Svinekød -->
+<div class="mb-16">
+<div class="bg-surface-container px-6 py-3 inline-block mb-8">
+<h3 class="font-label text-secondary uppercase tracking-widest text-sm">Svinekød</h3>
+</div>
+<div class="space-y-8">
+<div class="flex justify-between items-start group">
+<div class="flex gap-6">
+<span class="font-label text-secondary text-lg w-8 flex-shrink-0">10.</span>
+<div>
+<h3 class="font-headline text-xl text-on-surface group-hover:text-primary transition-colors">Svinekød med champignon &amp; bambusskud</h3>
+</div>
+</div>
+<span class="font-label text-primary text-lg font-bold tracking-widest whitespace-nowrap">128,-</span>
+</div>
+<div class="flex justify-between items-start group">
+<div class="flex gap-6">
+<span class="font-label text-secondary text-lg w-8 flex-shrink-0">11.</span>
+<div>
+<h3 class="font-headline text-xl text-on-surface group-hover:text-primary transition-colors">Svinekød i stærk hvidløgssauce</h3>
+</div>
+</div>
+<span class="font-label text-primary text-lg font-bold tracking-widest whitespace-nowrap">135,-</span>
+</div>
+<div class="flex justify-between items-start group">
+<div class="flex gap-6">
+<span class="font-label text-secondary text-lg w-8 flex-shrink-0">12.</span>
+<div>
+<h3 class="font-headline text-xl text-on-surface group-hover:text-primary transition-colors">Indbagt svinekød med sur-sød sauce</h3>
+</div>
+</div>
+<span class="font-label text-primary text-lg font-bold tracking-widest whitespace-nowrap">125,-</span>
+</div>
+<div class="flex justify-between items-start group">
+<div class="flex gap-6">
+<span class="font-label text-secondary text-lg w-8 flex-shrink-0">14.</span>
+<div>
+<h3 class="font-headline text-xl text-on-surface group-hover:text-primary transition-colors">Svinekød med cashewnødder</h3>
+</div>
+</div>
+<span class="font-label text-primary text-lg font-bold tracking-widest whitespace-nowrap">142,-</span>
+</div>
+<div class="flex justify-between items-start group">
+<div class="flex gap-6">
+<span class="font-label text-secondary text-lg w-8 flex-shrink-0">15.</span>
+<div>
+<h3 class="font-headline text-xl text-on-surface group-hover:text-primary transition-colors">Stegt flæsk på kinesisk manér</h3>
+</div>
+</div>
+<span class="font-label text-primary text-lg font-bold tracking-widest whitespace-nowrap">148,-</span>
+</div>
+</div>
+</div>
+<!-- Kylling -->
+<div>
+<div class="bg-surface-container px-6 py-3 inline-block mb-8">
+<h3 class="font-label text-secondary uppercase tracking-widest text-sm">Kylling</h3>
+</div>
+<div class="space-y-8">
+<div class="flex justify-between items-start group">
+<div class="flex gap-6">
+<span class="font-label text-secondary text-lg w-8 flex-shrink-0">16.</span>
+<div>
+<h3 class="font-headline text-xl text-on-surface group-hover:text-primary transition-colors">Kylling i karry med grøntsager</h3>
+</div>
+</div>
+<span class="font-label text-primary text-lg font-bold tracking-widest whitespace-nowrap">132,-</span>
+</div>
+<div class="flex justify-between items-start group">
+<div class="flex gap-6">
+<span class="font-label text-secondary text-lg w-8 flex-shrink-0">17.</span>
+<div>
+<h3 class="font-headline text-xl text-on-surface group-hover:text-primary transition-colors">Indbagt kylling med sur-sød sauce</h3>
+</div>
+</div>
+<span class="font-label text-primary text-lg font-bold tracking-widest whitespace-nowrap">128,-</span>
+</div>
+</div>
+</div>
+<!-- Decorative Element instead of empty space -->
+<div class="mt-16 border-t border-outline-variant/20 pt-8 text-center">
+<span class="material-symbols-outlined text-secondary text-4xl opacity-50" data-icon="restaurant">restaurant</span>
+<p class="font-headline text-sm text-on-surface-variant mt-4 italic">Flere retter tilgængelige i restauranten.</p>
+</div>
+</div>
+</section>
+</main>
+</div>
+</div>
+<!-- Footer -->
+<footer class="bg-stone-100 dark:bg-stone-900 full-width mt-auto tonal shift from surface-container-low to highest">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-8 py-16 max-w-7xl mx-auto font-sans text-body-sm text-[#8B0000] dark:text-red-500">
+<div class="col-span-1 md:col-span-1">
+<span class="font-serif italic text-xl">Vinde Heritage</span>
+</div>
+<div class="col-span-1 md:col-span-3 flex flex-col md:flex-row gap-8 justify-between">
+<nav class="flex flex-col space-y-4">
+<a class="text-stone-500 dark:text-stone-400 hover:underline decoration-[#8B0000]" href="#">Privatlivspolitik</a>
+<a class="text-stone-500 dark:text-stone-400 hover:underline decoration-[#8B0000]" href="#">Handelsbetingelser</a>
+</nav>
+<nav class="flex flex-col space-y-4">
+<a class="text-stone-500 dark:text-stone-400 hover:underline decoration-[#8B0000]" href="#">Fødevarestyrelsen</a>
+<a class="text-stone-500 dark:text-stone-400 hover:underline decoration-[#8B0000]" href="#">Karriere</a>
+</nav>
+<div class="text-stone-500 dark:text-stone-400 self-end md:text-right mt-8 md:mt-0">
+                    © 2024 Vinde Heritage Chinese Restaurant. Nordic Silk Road Dining.
+                </div>
+</div>
+</div>
+</footer>
+</body></html>

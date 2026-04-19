@@ -7,7 +7,7 @@ export default function TakeawayPage() {
   const info = getTakeawayInfo();
 
   return (
-    <div className="space-y-6 text-sm">
+    <div className="mx-auto w-full max-w-6xl space-y-6 px-5 py-10 text-sm md:px-6">
       <PageHeader
         eyebrow="Takeaway"
         title="Takeaway kommer i næste fase"

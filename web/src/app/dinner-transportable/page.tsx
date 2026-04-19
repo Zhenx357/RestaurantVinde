@@ -8,7 +8,7 @@ export default function DinnerTransportablePage() {
   const packages = listDinnerPackages();
 
   return (
-    <div className="space-y-8">
+    <div className="mx-auto w-full max-w-6xl space-y-8 px-5 py-10 md:px-6">
       <PageHeader
         eyebrow="Dinner transportable"
         title="Buffeter klar til levering"
