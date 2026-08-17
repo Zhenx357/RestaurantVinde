@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { Manrope, Noto_Serif } from "next/font/google";
 import { SiteHeader } from "@/components/layout/site-header";
 import { getContactDetails, getOpeningHours } from "@/data/site";
@@ -86,12 +85,12 @@ export default function RootLayout({
                   <p>Telefon: {contact.phoneNumbers[0].replace("+45 ", "")}</p>
                   <p>
                     E-mail:{" "}
-                    <Link
+                    <a
                       href={`mailto:${contact.email}`}
                       className="transition-colors hover:text-white"
                     >
                       {contact.email}
-                    </Link>
+                    </a>
                   </p>
                 </div>
 
@@ -123,6 +122,7 @@ export default function RootLayout({
                   <div>
                     <a
                       href="https://www.facebook.com/p/Restaurant-Vinde-%C3%85rhus-100063631117353/"
+
                       className="inline-flex text-[var(--background)]/80 transition-colors hover:text-white"
                     >
                       <FacebookIcon />
