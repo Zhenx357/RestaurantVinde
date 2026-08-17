@@ -115,14 +115,14 @@ export default function RootLayout({
                 <div className="space-y-1 md:text-right">
                   <p>CVR: 34887012</p>
                   <Link
-                    href="/#contact"
+                    href="https://www.findsmiley.dk/Sider/KontrolRapport.aspx?Virk7038173"
                     className="mb-2 inline-block underline decoration-[color:rgba(255,248,239,0.4)] underline-offset-2 transition-colors hover:text-white"
                   >
                     Smiley info
                   </Link>
                   <div>
                     <Link
-                      href="https://www.facebook.com"
+                      href="https://www.facebook.com/p/Restaurant-Vinde-%C3%85rhus-100063631117353/"
                       aria-label="Facebook"
                       target="_blank"
                       rel="noopener noreferrer"
