@@ -4,7 +4,7 @@ Client website redesign for `restaurantvinde.dk`.
 
 This project is a modern redesign of an older restaurant website I originally designed for the client. I rebuilt it into a cleaner, more maintainable frontend using React, Next.js, and Tailwind CSS, with a stronger focus on responsive design, visual hierarchy, and long-term scalability.
 
-![Restaurant Vinde homepage redesign](web/homepage-desktop.png)
+![Restaurant Vinde homepage redesign](web/readme_preview.png)
 
 ## Project Summary
 
